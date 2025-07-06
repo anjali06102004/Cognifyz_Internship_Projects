@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2 Task 1 - Front-end Frameworks</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="text-center py-5 bg-primary text-white">
+            <h1 class="display-4">Level 2 Task 1</h1>
+            <p class="lead">Front-end Frameworks: Bootstrap Implementation</p>
+        </header>
+
+        <!-- Responsive Card Component Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Responsive Card Component</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://plus.unsplash.com/premium_photo-1661963212517-830bbb7d76fc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" 
+                                 class="card-img-top" alt="Card Image">
+                            <div class="card-body">
+                                <h5 class="card-title">Beautiful Card Design</h5>
+                                <p class="card-text">This is a responsive card component built with Bootstrap. It features an image, title, and descriptive text that adapts to different screen sizes.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-primary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div>
+                                    <small class="text-muted">3 mins ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Grid Layout Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Responsive Grid Layout</h2>
+                
+                <!-- Grid Row 1 -->
+                <div class="row mb-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <div class="bg-primary text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h5 class="card-title">Feature 1</h5>
+                                <p class="card-text">Responsive design that works on all devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <div class="bg-success text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-gear-fill"></i>
+                                </div>
+                                <h5 class="card-title">Feature 2</h5>
+                                <p class="card-text">Easy to customize and extend functionality.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <div class="bg-warning text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-lightning-fill"></i>
+                                </div>
+                                <h5 class="card-title">Feature 3</h5>
+                                <p class="card-text">Fast loading and optimized performance.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="card text-center h-100">
+                            <div class="card-body">
+                                <div class="bg-danger text-white rounded-circle mx-auto mb-3" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="bi bi-heart-fill"></i>
+                                </div>
+                                <h5 class="card-title">Feature 4</h5>
+                                <p class="card-text">User-friendly interface and experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Row 2 -->
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Main Content Area</h5>
+                            </div>
+                            <div class="card-body">
+                                <p>This is a larger content area that takes up more space on larger screens. It demonstrates how Bootstrap's grid system can be used to create flexible layouts that adapt to different screen sizes.</p>
+                                <p>The grid system uses 12 columns by default, and you can specify how many columns an element should span at different breakpoints (xs, sm, md, lg, xl).</p>
+                                <button class="btn btn-primary">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Sidebar</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><a href="#" class="text-decoration-none">Link 1</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none">Link 2</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none">Link 3</a></li>
+                                    <li class="mb-2"><a href="#" class="text-decoration-none">Link 4</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-4">
+            <p class="mb-0">Level 2 Task 1 - Bootstrap Framework Implementation</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

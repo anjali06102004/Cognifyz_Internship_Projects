@@ -1,0 +1,159 @@
+/* Custom styles to enhance Bootstrap */
+
+/* Smooth transitions for all interactive elements */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+/* Custom button hover effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Enhanced card styling */
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Custom header styling */
+header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%) !important;
+}
+
+/* Feature icons styling */
+.bg-primary, .bg-success, .bg-warning, .bg-danger {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .bg-primary,
+.card:hover .bg-success,
+.card:hover .bg-warning,
+.card:hover .bg-danger {
+    transform: scale(1.1);
+}
+
+/* Custom link styling */
+.card-body a {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.card-body a:hover {
+    color: #0056b3;
+    text-decoration: underline !important;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Custom animation for page load */
+.container {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced footer styling */
+footer {
+    background: linear-gradient(135deg, #343a40 0%, #212529 100%) !important;
+}
+
+/* Custom spacing utilities */
+.section-padding {
+    padding: 4rem 0;
+}
+
+@media (max-width: 576px) {
+    .section-padding {
+        padding: 2rem 0;
+    }
+}
+
+/* Card border radius enhancement */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+/* Custom shadow for better depth */
+.shadow-custom {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+/* Hover effect for feature cards */
+.card.text-center:hover {
+    background-color: #f8f9fa;
+}
+
+/* Responsive grid adjustments */
+@media (max-width: 1200px) {
+    .col-xl-3 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-lg-4 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Custom focus states for accessibility */
+.btn:focus,
+.card:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Enhanced typography */
+.card-title {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card-text {
+    color: #6c757d;
+    line-height: 1.6;
+} 
